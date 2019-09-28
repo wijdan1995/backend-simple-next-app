@@ -14,34 +14,8 @@ db.on('error', (error) => console.error(error))
 db.once('open', () => console.log('connected to database'))
 
 
-// const messages = [
-//     { name: 'hi', email: 'w@w.com', message: 'Hellooo' }
-// ]
-// // methods
-// app.get()
-// app.post()
-// app.put()
-// app.delete()
-
 const contactRouter = require('./routes/contact')
 app.use('/contact', contactRouter)
-
-
-// app.get('/', (req, res) => {
-//     res.send('Hello World');
-// });
-
-// app.post('/contact', (req, res) => {
-//     const message = {
-//         name: req.body.name,
-//         email: req.body.email,
-//         massage: req.body.massage
-//     }
-//     messages.push(messages);
-//     res.send(message)
-
-// })
-
 
 // PORT 
 const port = process.env.PORT || 1234

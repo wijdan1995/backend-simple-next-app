@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "mocha --exit",
+    "server": "nodemon server.js",
+    "serve": "nodemon server.js",
+    "s": "nodemon server.js",
+    "debug-server": "DEBUG=express:* nodemon server.js"
   },
   "keywords": [],
   "author": "",

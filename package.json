@@ -8,7 +8,7 @@
     "test": "mocha --exit",
     "server": "nodemon index.js",
     "serve": "nodemon index.js",
-    "s": "nodemon server.js",
+    "s": "nodemon index.js",
     "debug-server": "DEBUG=express:* nodemon index.js"
   },
   "keywords": [],

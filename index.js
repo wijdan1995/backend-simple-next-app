@@ -17,8 +17,8 @@ const expressPort = 1234
 // set CORS headers on response from this API using the `cors` NPM package
 // `CLIENT_ORIGIN` is an environment variable that will be set on Heroku
 // app.use(cors())
-app.use(cors({ origin: process.env.CLIENT_ORIGIN || `http://localhost:${reactPort}` }))
-app.options('*', cors())
+app.use(cors({ origin: 'https://secure-ravine-85991.herokuapp.com' || `http://localhost:${reactPort}` }))
+
 
 const mongoose = require('mongoose')
 // mongoDB connection

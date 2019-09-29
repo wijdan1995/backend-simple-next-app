@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node index.js",
     "test": "mocha --exit",
-    "server": "nodemon server.js",
-    "serve": "nodemon server.js",
+    "server": "nodemon index.js",
+    "serve": "nodemon index.js",
     "s": "nodemon server.js",
-    "debug-server": "DEBUG=express:* nodemon server.js"
+    "debug-server": "DEBUG=express:* nodemon index.js"
   },
   "keywords": [],
   "author": "",

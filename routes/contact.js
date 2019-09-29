@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const Contact = require('../models/contact')
+// const newEmail = require('../send-email')
 
 // Get 
 router.get('/', async (req, res) => {
@@ -24,7 +25,10 @@ router.post('/', async (req, res) => {
     try {
         const newContact = await contact.save()
         res.status(201).json(newContact)
-    } catch (err) {
+        console.log("Form sent");
+    }
+
+    catch (err) {
         res.status(400).json({ message: err.message })
     }
 

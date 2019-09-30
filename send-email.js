@@ -15,9 +15,7 @@ function newEmail({ email, name, message }) {
         .then(() => {
             //Celebrate
             console.log('SendGrid Done');
-            alert("Thank you for your message /n We'll contact you soon")
         })
-        .then(history.push('/'))
         .catch(error => {
 
             //Log friendly error
